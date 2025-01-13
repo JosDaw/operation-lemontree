@@ -1,0 +1,48 @@
+{
+	"components": {
+		"Button": {
+			"meta": {
+				"scope": "default",
+				"parameters": {},
+				"variantGroups": {},
+				"states": {},
+				"appearances": {
+					"default": {
+						"mapping": {
+							"borderRadius": 30
+						}
+					},
+					"filled": {
+						"default": true
+					}
+				}
+			},
+			"appearances": {
+				"default": {
+					"mapping": {
+						"fontFamily": "text-font-family"
+					}
+				},
+				"filled": {
+					"mapping": {
+						"textFontFamily": "button-text-font-family"
+					}
+				},
+				"ghost": {
+					"mapping": {
+						"textFontFamily": "button-text-font-family"
+					}
+				},
+				"outline": {
+					"mapping": {
+						"textFontFamily": "button-text-font-family"
+					}
+				}
+			}
+		}
+	},
+	"strict": {
+		"text-font-family": "OpenSans_400Regular",
+		"button-text-font-family": "OpenSans_600SemiBold"
+	}
+}
