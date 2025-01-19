@@ -167,8 +167,6 @@ export const getBorderColor = (status: ItemStatus): string => {
 			return Colors.PRIMARY // Available status color
 		case ItemStatus.Given:
 			return Colors.GRAY // Given status color
-		case ItemStatus.Reserved:
-			return Colors.WARNING // Reserved status color
 		case ItemStatus.Rejected:
 			return Colors.DANGER // Rejected status color
 		case ItemStatus.Pending:

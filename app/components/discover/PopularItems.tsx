@@ -17,7 +17,10 @@ interface PopularItemsProps {
  * @param {PopularItemsProps} props - The component props.
  * @returns {JSX.Element} A horizontal list of popular items or a fallback message.
  */
-const PopularItems: React.FC<PopularItemsProps> = ({ listings, error }) => {
+const PopularItems: React.FC<PopularItemsProps> = ({
+	listings,
+	error,
+}: PopularItemsProps): JSX.Element => {
 	return (
 		<Layout style={styles.popularSection}>
 			<Text status="info" style={globalStyles.smallHeadingText}>

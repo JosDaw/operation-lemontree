@@ -211,7 +211,7 @@ export const getParticipantsFromConversationID = async (
 				return null
 			}
 
-			return { id: participantID, ...(userDoc.data() as IUser) }
+			return { ...(userDoc.data() as IUser) }
 		})
 
 		// Wait for all user data to be fetched

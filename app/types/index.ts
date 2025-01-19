@@ -32,7 +32,6 @@ export interface ILocation {
 export enum ItemStatus {
 	Available = "Up for Grabs",
 	Given = "Donated",
-	Reserved = "Claimed",
 	Rejected = "Rejected",
 	Pending = "Pending",
 }

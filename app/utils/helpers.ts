@@ -87,7 +87,7 @@ export const handleCompleteListing = async (itemID: string): Promise<void> => {
  * @returns {boolean} Returns true if the application is in development mode, false otherwise.
  */
 export const isDevMode = (): boolean => {
-	return false
+	return __DEV__
 }
 
 export const isWeb = (): boolean => {

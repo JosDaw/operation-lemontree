@@ -22,7 +22,7 @@ const CountrySelector: React.FC<CountrySelectorProps> = ({
 				<CountryPicker
 					selected={countryName}
 					setSelected={() => {}}
-					setCountryDetails={(country) => onSelect(country)}
+					setCountryDetails={(country: any) => onSelect(country)}
 					countryCodeTextStyles={styles.text}
 					countryCodeContainerStyles={styles.pickerContainer}
 					dropdownStyles={styles.dropdown}

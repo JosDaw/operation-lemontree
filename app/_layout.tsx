@@ -4,6 +4,7 @@ import { ApplicationProvider, Text } from "@ui-kitten/components"
 import * as Device from "expo-device"
 import { Stack } from "expo-router"
 import * as SplashScreen from "expo-splash-screen"
+import { StatusBar } from "expo-status-bar"
 import React, { useEffect } from "react"
 import { LogBox, StatusBar as NativeStatusBar } from "react-native"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
@@ -55,7 +56,7 @@ function RootLayout() {
 								flex: 1,
 								backgroundColor: isWebOrDev
 									? Colors.DANGER
-									: Colors.TRANSPARENT,
+									: Colors.BACKGROUND_DARK,
 								paddingTop:
 									Device.osName === DeviceTypes.ANDROID
 										? NativeStatusBar.currentHeight
@@ -63,6 +64,7 @@ function RootLayout() {
 							}}
 							edges={["right", "top", "left"]}
 						>
+							<StatusBar style="light" />
 							{isWebOrDev && (
 								<Text
 									style={{

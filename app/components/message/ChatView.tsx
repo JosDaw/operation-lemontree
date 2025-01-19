@@ -31,10 +31,12 @@ const ChatView: React.FC<ChatViewProps> = ({ conversationID }) => {
 		const loadInitialMessages = async () => {
 			setIsInitialLoading(true)
 
-			// Participants info
 			const tempParticipants =
 				await getParticipantsFromConversationID(conversationID)
-			setParticipants(tempParticipants)
+			const validParticipants = tempParticipants.filter(
+				(p): p is IUser => p !== null
+			)
+			setParticipants(validParticipants)
 
 			setIsInitialLoading(false)
 		}

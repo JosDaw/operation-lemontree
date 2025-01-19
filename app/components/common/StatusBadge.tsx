@@ -41,8 +41,6 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({
 			case ItemStatus.Given:
 			case ItemStatus.Rejected:
 				return [theme["color-danger-500"], theme["color-danger-300"]]
-			case ItemStatus.Reserved:
-				return [theme["color-success-500"], theme["color-success-300"]]
 			default:
 				return [theme["color-basic-600"], theme["color-basic-500"]]
 		}

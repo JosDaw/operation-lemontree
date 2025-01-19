@@ -5,6 +5,7 @@ import {
 	DEFAULT_RADIUS,
 } from "@/constants/constants"
 import useUser from "@/store/useUser"
+import { ItemStatus } from "@/types"
 import {
 	collection,
 	DocumentSnapshot,
@@ -58,6 +59,7 @@ function useListings<T>({
 
 			const baseFilters = [
 				where("isDeleted", "==", false),
+				where("status", "==", ItemStatus.Available),
 				orderBy("dateCreated", "desc"),
 				...filters,
 			]
@@ -155,6 +157,7 @@ function useListings<T>({
 
 			const baseFilters = [
 				where("isDeleted", "==", false),
+				where("status", "==", ItemStatus.Available),
 				orderBy("saves", "desc"),
 			]
 

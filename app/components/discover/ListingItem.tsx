@@ -6,9 +6,7 @@ import { Layout, Text } from "@ui-kitten/components"
 import { Link } from "expo-router"
 import React, { ReactElement, useEffect, useState } from "react"
 import { Image, StyleSheet, TouchableOpacity } from "react-native"
-import Badge from "../common/Badge"
 import SavesBadge from "../common/SavesBadge"
-import StatusBadge from "../common/StatusBadge"
 
 interface ListingItemProps {
 	item: IItem
@@ -39,13 +37,6 @@ const ListingItem = ({ item }: ListingItemProps): ReactElement => {
 		fetchUnitAndCalculateDistance()
 	}, [item.location, user.location])
 
-	const renderBadge = () => {
-		if (!item.isApproved) {
-			return <Badge text={ItemStatus.Pending} badgeStyle={styles.badgeStyle} />
-		}
-		return <StatusBadge status={item.status} />
-	}
-
 	const itemOpacity = item.status === ItemStatus.Available ? 1 : 0.5
 	const combinedStyles = {
 		...styles.item,
@@ -55,7 +46,6 @@ const ListingItem = ({ item }: ListingItemProps): ReactElement => {
 	return (
 		<Link href={`/item/${item.id}`} asChild style={styles.itemContainer}>
 			<TouchableOpacity style={combinedStyles}>
-				{renderBadge()}
 				<Layout style={{ position: "relative" }}>
 					<Image
 						source={{ uri: item.images[0] }}

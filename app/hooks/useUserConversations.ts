@@ -112,7 +112,10 @@ const useUserConversations = (userID: string) => {
 					conversationPromises
 				)
 					.then((results) =>
-						results.filter((conversation) => conversation !== null)
+						results.filter(
+							(conversation): conversation is IConversation =>
+								conversation !== null
+						)
 					) // Filter out null values
 					.catch((error) => {
 						console.error("Error processing conversations:", error)
