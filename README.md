@@ -55,26 +55,28 @@ Expo app. It is encouraged to be used as a learning tool for developers who are
 new to React Native and Expo.
 
 This project is open-source and free to use for non-commercial purposes. You can
-read the full license in the [LICENSE](./LICENSE) file.
+read the full license in the [LICENSE](./LICENSE) file. 
+
+Anyone is welcome to fork or copy the entire app to create their own community pantry or other community-giving service provided the license agreement is followed.
 
 If you would like to use any part of this project for commercial purposes,
 please contact the original author, [Josie Daw](https://github.com/JosDaw).
 
 ## App Features
 
-- Discovery: Users can search for items by category or keyword. They will be
+- **Discovery**: Users can search for items by category or keyword. They will be
   filtered by location if the user is logged in.
-- Favourites: Users can save items they are interested in to their favourites
+- **Favourites**: Users can save items they are interested in to their favourites
   list. They can view and remove favourites.
-- Conversation: Users can chat with other users to arrange pick-up or delivery of items. They can report and block users, or delete conversations.
+- **Conversations**: Users can chat with other users to arrange pick-up or delivery of items. They can report and block users, or delete conversations.
 - Upload Items: Users can upload items they want to give away, including
   descriptions and photos.
-- Moderation: Items are moderated before they are published to the app.
-- Notifications: Users receive notifications when they have a new message.
-- Reporting: Users can report items and users that are inappropriate.
-- User Profiles: Users can view their profile information and manage their
+- **Moderation**: Items are moderated before they are published to the app.
+- **Notifications**: Users receive notifications when they have a new message.
+- **Reporting**: Users can report items and users that are inappropriate.
+- **User Profiles**: Users can view their profile information and manage their
   uploaded items.
-- Settings: Users can manage their account settings, log out, or delete their account.
+- **Settings**: Users can manage their account settings, log out, or delete their account.
 
 ## Installation
 
