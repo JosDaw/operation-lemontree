@@ -19,11 +19,11 @@ _Sharing is caring: Discover, connect, and give back with Lemontree._
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Who Can Use This Project?](#who-can-use-this-project)
 - [Features](#app-features)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
 - [How to Create Your Own Lemontree App](#how-to-create-your-own-lemontree-app)
   - [Firebase Setup](#firebase-setup)
   - [Google Maps API Setup (For Geocoding)](#google-maps-api-setup-for-geocoding)
@@ -37,6 +37,16 @@ _Sharing is caring: Discover, connect, and give back with Lemontree._
 - [License](#license)
 - [Web Demo](#web-demo)
   - [How to Deploy An Expo App To Netlify](#how-to-deploy-an-expo-app-to-netlify)
+ 
+## Screenshots
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/802e6da0-40e9-4c27-aa48-80034d0d2e1b" alt="lemontree-1" width="300" />
+  <img src="https://github.com/user-attachments/assets/3d7a0f8f-c820-4cca-acf8-ea07f71ca24f" alt="lemontree-2" width="300" />
+  <img src="https://github.com/user-attachments/assets/b522131f-b0a1-4cd1-a6be-2a862925047a" alt="lemontree-3" width="300" />
+  <img src="https://github.com/user-attachments/assets/390e9869-0691-4dcc-916c-a7198f5de3ea" alt="lemontree-4" width="300" />
+  <img src="https://github.com/user-attachments/assets/e3210cc8-df5c-4b83-b9f9-93854d9c5401" alt="lemontree-5" width="300" />
+</div>
 
 ## Who Can Use This Project?
 
@@ -52,11 +62,11 @@ please contact the original author, [Josie Daw](https://github.com/JosDaw).
 
 ## App Features
 
-- Search Items: Users can search for items by category or keyword. They will be
+- Discovery: Users can search for items by category or keyword. They will be
   filtered by location if the user is logged in.
 - Favourites: Users can save items they are interested in to their favourites
-  list.
-- Chat: Users can chat with other users to arrange pick-up or delivery of items.
+  list. They can view and remove favourites.
+- Conversation: Users can chat with other users to arrange pick-up or delivery of items. They can report and block users, or delete conversations.
 - Upload Items: Users can upload items they want to give away, including
   descriptions and photos.
 - Moderation: Items are moderated before they are published to the app.
@@ -64,6 +74,7 @@ please contact the original author, [Josie Daw](https://github.com/JosDaw).
 - Reporting: Users can report items and users that are inappropriate.
 - User Profiles: Users can view their profile information and manage their
   uploaded items.
+- Settings: Users can manage their account settings, log out, or delete their account.
 
 ## Installation
 
@@ -106,8 +117,6 @@ switch to Expo Go.)
 - Firebase: For authentication, storage, and real-time database needs.
 - Supabase: For image storage.
 - Push Notifications: For notifying users about their requested items.
-
-## Screenshots
 
 ## How to Create Your Own Lemontree App
 
@@ -236,8 +245,6 @@ eas update:configure
 
 Join our growing community to share feedback, ask questions, and contribute:
 
-- **GitHub Discussions**:
-  [Operation Lemontree Discussions](https://github.com/JosDaw/operation-lemontree/discussions)
 - **Issues**: Found a bug?
   [Report it here](https://github.com/JosDaw/operation-lemontree/issues)
 
