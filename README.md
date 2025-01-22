@@ -24,7 +24,6 @@ _Sharing is caring: Discover, connect, and give back with Lemontree._
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
-- [Documentation](#documentation)
 - [How to Create Your Own Lemontree App](#how-to-create-your-own-lemontree-app)
   - [Firebase Setup](#firebase-setup)
   - [Google Maps API Setup (For Geocoding)](#google-maps-api-setup-for-geocoding)
@@ -109,11 +108,6 @@ switch to Expo Go.)
 - Push Notifications: For notifying users about their requested items.
 
 ## Screenshots
-
-## Documentation
-
-This app has documentation generated from JSDoc comments. To view the
-documentation, go to docs/index.html and open it in your browser.
 
 ## How to Create Your Own Lemontree App
 
